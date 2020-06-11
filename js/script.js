@@ -46,7 +46,7 @@ const quotes = [
     source: `Chance the Rapper`,
     citation: `Blessings`,
     year: "",
-    tagss: `rap`,
+    tags: `rap`,
   },
 ];
 console.log(quotes);
@@ -57,9 +57,7 @@ console.log(quotes);
 function getRandomQuote() {
   let getQuote = [Math.floor(Math.random() * quotes.length)]; //generates a random number and assigns it to a variable
 
-  let randomQuote = quotes[getQuote]; //grabs a random object using bracket notation from the `quotes` array and stores it to a variable
-
-  return randomQuote; //return the variable storing the random quote object
+  return quotes[getQuote]; //return the variable storing the random quote object
 }
 // console.log(getRandomQuote());
 
@@ -68,27 +66,27 @@ function getRandomQuote() {
  ***/
 function printQuote() {
   let randomQuote = getRandomQuote(); //calls the getRandomQuote() function and assigns it to a variable
-  console.log(randomQuote);
+  // console.log(randomQuote);
 
   // Initialize the HTML string
   let htmlString = `<p class="quote">${randomQuote.quote}</p>`; //
   htmlString += `<p class="source">${randomQuote.source}`;
 
   //Log out to test HTML String
-  console.log(randomQuote.quote);
-  console.log(randomQuote.source);
+  // console.log(randomQuote.quote);
+  // console.log(randomQuote.source);
 
   // Check if the `citation` property exists, and if it does, concatenate to the HTML string
   if (randomQuote.citation) {
     htmlString += `<span class='citation'>${randomQuote.citation}</span>`;
   }
-  console.log(randomQuote.citation); //Returns undefined if property does not exist
+  // console.log(randomQuote.citation); //Returns undefined if property does not exist
 
   // Check if the `year` property exists, and if it does, concatenate to the HTML string
   if (randomQuote.year) {
     htmlString += `<span class="year">${randomQuote.year}</span>`;
   }
-  console.log(randomQuote.year); //Returns undefined if property does not exist
+  // console.log(randomQuote.year); //Returns undefined if property does not exist
 
   /***
    * EXTRA CREDIT #1
@@ -100,7 +98,7 @@ function printQuote() {
   if (randomQuote.tags) {
     htmlString += `<span class-"tags">, ${randomQuote.tags}</span>`;
   }
-  console.log(randomQuote.tag); //Returns undefined if property does not exist
+  // console.log(randomQuote.tag); //Returns undefined if property does not exist
 
   // Close the HTML string after checking and adding for existing properties
   htmlString += `</p>`;
@@ -109,7 +107,7 @@ function printQuote() {
   document.getElementById("quote-box").innerHTML = htmlString;
 
   //Log out to test `htmlString`
-  console.log(htmlString);
+  // console.log(htmlString);
 
   /***
    * EXTRA CREDIT #2
