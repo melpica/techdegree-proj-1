@@ -132,7 +132,7 @@ function printQuote() {
    ***/
 
   /**
-   * I went to Stackoverflow for help on this
+   * I went to Stackoverflow for help on setInterval() method
    * /***************************************************************************************
    *    Title: <use JavaScript setInterval method>
    *    Author: <Sameul Dauzon>
