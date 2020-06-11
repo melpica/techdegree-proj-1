@@ -70,8 +70,8 @@ function printQuote() {
   let randomQuote = getRandomQuote(); //calls the getRandomQuote() function and assigns it to a variable
   console.log(randomQuote);
 
-  // Initialize the HTML string
-  let htmlString = `<p class="quote">${randomQuote.quote}</p>`; //
+  // Initialize the HTML string and store in a variable
+  let htmlString = `<p class="quote">${randomQuote.quote}</p>`;
   htmlString += `<p class="source">${randomQuote.source}`;
 
   //Log out to test HTML String
