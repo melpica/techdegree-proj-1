@@ -46,7 +46,7 @@ const quotes = [
     source: `Chance the Rapper`,
     citation: `Blessings`,
     year: "",
-    tagss: `rap`,
+    tags: `rap`,
   },
 ];
 console.log(quotes);
