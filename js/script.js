@@ -56,7 +56,6 @@ console.log(quotes);
  ***/
 function getRandomQuote() {
   let getQuote = [Math.floor(Math.random() * quotes.length)]; //generates a random number and assigns it to a variable
-
   return quotes[getQuote]; //return the variable storing the random quote object
 }
 // console.log(getRandomQuote());
